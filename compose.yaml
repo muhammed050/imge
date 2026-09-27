@@ -1,0 +1,16 @@
+services:
+  imge:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - photos:/app/data
+    environment:
+      PORT: 3000
+      DATA_DIR: /app/data
+      MAX_PHOTOS: 500
+      STORAGE_LIMIT_MB: 512
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+    restart: unless-stopped
+volumes:
+  photos:

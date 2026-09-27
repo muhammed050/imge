@@ -1,0 +1,31 @@
+{
+  "name": "imge",
+  "version": "1.0.0",
+  "description": "A live shared photo wall with equal-area layout and file-based storage",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammed050/imge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/muhammed050/imge/issues"
+  },
+  "homepage": "https://github.com/muhammed050/imge#readme",
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
